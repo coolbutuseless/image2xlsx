@@ -29,6 +29,18 @@ It stands on the shoulders of the following giants:
 * [tidyr](https://cran.r-project.org/package=tidyr)
 * [raster](https://cran.r-project.org/package=raster)
 
+## Future/ToDo
+
+Patches welcomed!
+
+* Deal with transparency
+    * Get `magick` to flatten transparency to a user-specified background colour?
+* Place the image at a desired location
+    * Currently image is placed with top left corner at `A1` on the sheet. 
+    * Be nice to place it offscreen so that it's hidden when you first open the sheet
+* Animation using `openxlsx::conditionalFormatting()`
+    * `gifanim2xlsx()`
+
 
 ## Installation
 
