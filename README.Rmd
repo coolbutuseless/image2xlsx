@@ -57,6 +57,21 @@ knitr::include_graphics("man/figures/rlogo.png")
 ```
 
 
+## Bender Bending Rodríguez
+
+
+```{r bender}
+library(image2xlsx)
+image2xlsx("working/bender.jpg", "man/figures/bender.xlsx")
+```
+
+A screenshot of `bender.xlsx` opened in LibreOffice
+
+```{r echo=FALSE}
+knitr::include_graphics("man/figures/bender.png")
+```
+
+
 ## Grappling Hook!
 
 

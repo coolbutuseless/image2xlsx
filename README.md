@@ -41,6 +41,17 @@ A screenshot of `rlogo.xlsx` opened in LibreOffice
 
 <img src="man/figures/rlogo.png" width="100%" />
 
+## Bender Bending Rodríguez
+
+``` r
+library(image2xlsx)
+image2xlsx("working/bender.jpg", "man/figures/bender.xlsx")
+```
+
+A screenshot of `bender.xlsx` opened in LibreOffice
+
+<img src="man/figures/bender.png" width="100%" />
+
 ## Grappling Hook\!
 
 ``` r
