@@ -25,7 +25,7 @@ image2xlsx <- function(image_filename, xlsx_filename = NULL, height = 40, overwr
   # load the image
   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   image <- magick::image_read(image_filename) %>%
-    magick::image_scale(magick::geometry_size_pixels(1000, 40)) %>%
+    magick::image_scale(magick::geometry_size_pixels(1000, height)) %>%
     magick::image_data()
 
   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
