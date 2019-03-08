@@ -96,20 +96,3 @@ image2xlsx <- function(image_filename, xlsx_filename = NULL, height = 40, overwr
   invisible(wb)
 }
 
-
-if (FALSE) {
-
-  library(dplyr)
-  library(tidyr)
-  library(openxlsx)
-
-  #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  # Read the R logo from the jpeg package
-  #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  image_filename <- system.file("img", "Rlogo.jpg",  package="jpeg")
-
-  image2xlsx(image_filename, "out.xlsx")
-}
-
-
-
