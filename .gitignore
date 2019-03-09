@@ -5,4 +5,5 @@
 *.swp
 .Rhistory
 *.xlsx
+*.xlsx#
 working

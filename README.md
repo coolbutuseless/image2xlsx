@@ -27,13 +27,9 @@ Patches welcomed\!
   - Deal with transparency
       - Get `magick` to flatten transparency to a user-specified
         background colour?
-  - Place the image at a desired location
-      - Currently image is placed with top left corner at `A1` on the
-        sheet.
-      - Be nice to place it offscreen so that it’s hidden when you first
-        open the sheet
+  - ~~Place the image at a desired location~~
   - Animation using `openxlsx::conditionalFormatting()`
-      - `gifanim2xlsx()`
+      - `gifanim2xlsx()` ???
 
 ## Installation
 
@@ -49,7 +45,7 @@ devtools::install_github("coolbutuseless/image2xlsx")
 
 ``` r
 library(image2xlsx)
-image2xlsx("working/RStudio.png", "man/figures/rlogo.xlsx")
+image2xlsx("working/RStudio.png", "man/figures/rlogo.xlsx", height = 20, xoffset = 3, yoffset = 3)
 ```
 
 A screenshot of `rlogo.xlsx` opened in LibreOffice

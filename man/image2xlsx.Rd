@@ -5,7 +5,7 @@
 \title{Convert an image to an excel spreadsheet}
 \usage{
 image2xlsx(image_filename, xlsx_filename = NULL, height = 40,
-  overwrite = FALSE)
+  width = NULL, xoffset = 0, yoffset = 0, overwrite = FALSE)
 }
 \arguments{
 \item{image_filename}{filename of an image supported by \code{magick}}
@@ -13,6 +13,10 @@ image2xlsx(image_filename, xlsx_filename = NULL, height = 40,
 \item{xlsx_filename}{filename of the output excel spreadsheet.}
 
 \item{height}{Height of output i.e. number of vertical cells the image should occupy. Default: 40}
+
+\item{width}{Width of output. Default: NULL - scale to height and keep aspect ratio}
+
+\item{xoffset, yoffset}{Starting cooridinates for top-left of image. Default (0, 0)}
 
 \item{overwrite}{Overwrite the excel spreadsheet if it already exists? Default: FALSE}
 }
